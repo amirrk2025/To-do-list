@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App with Blog</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>My Todo List</h1>
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <input type="text" id="descriptionInput" placeholder="Enter task description...">
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="addTask()">Add Task</button>
+        <button onclick="loadBlog()">Go to Blog</button>
+    </div>
+    <ul id="taskList"></ul>
+
+
+    <div id="blog" class="blog-container" style="display:none;">
+        <h2>Blog Posts</h2>
+        <div id="blogPosts"></div>
+        <button onclick="hideBlog()">Back to Todo List</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
